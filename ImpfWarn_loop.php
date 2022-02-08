@@ -61,7 +61,8 @@ function writeLog($msg)
 
 function sendTelegramMessage($method, $parameters)
 {
-    $botToken = '1858527465:AAH8gGuTXFQohDkYHK8j0Gyu5jxCHyqIdz8';
+    //TODO: Add bot token
+    $botToken = '';
     $url = 'https://api.telegram.org/bot' . $botToken . '/' . $method;
 
     if (!$curl = curl_init()) {
